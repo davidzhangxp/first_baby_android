@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/shipping_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".activities.ShippingActivity">
+
+
+        <TextView
+            android:id="@+id/shipping_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:text="Shipping Address"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shipping_title"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:hint="First Name" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first_name"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:hint="Last Name" />
+
+        <EditText
+            android:id="@+id/shipping_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/last_name"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:hint="Address" />
+
+        <EditText
+            android:id="@+id/shipping_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shipping_address"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:hint="city" />
+
+        <EditText
+            android:id="@+id/shipping_postalCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shipping_city"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:hint="postalCode" />
+
+        <EditText
+            android:id="@+id/shipping_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shipping_postalCode"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:hint="country" />
+
+        <CheckBox
+            android:id="@+id/pickup_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shipping_country"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/pickup_checklabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shipping_country"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/pickup_checkbox"
+            android:text="pickup(no need address)" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/shipping_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pickup_checkbox"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/green_button_background"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1045914740821",
+    "project_id": "first-baby-20f25",
+    "storage_bucket": "first-baby-20f25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045914740821:android:f8b6a2e37f8d63a669ccdc",
+        "android_client_info": {
+          "package_name": "com.example.first_baby"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045914740821-1f68th9a6ea1ggb0mkaddsj43tpspn64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrE7HP4SI8XxZG_TCUWkfM9-YnZ9yrRfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045914740821-1f68th9a6ea1ggb0mkaddsj43tpspn64.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1045914740821-ueanfknl8sgq944r2lm6p8mut3j6lqc5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.first-baby"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.first_baby.activities.ui.HomeFragment"
+        android:label="Menu"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.first_baby.activities.ui.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.first_baby.activities.ui.ProfileFrament"
+        android:label="Order History"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        tools:context=".activities.PaymentActivity">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_payment_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/payment_item_price_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rv_payment_items"
+            android:text="Item Price"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/payment_shipping_price_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment_item_price_label"
+            android:text="Shipping Price"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/payment_tax_price_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment_shipping_price_label"
+            android:text="Tax Price"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/payment_total_price_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment_tax_price_label"
+            android:text="Total Price"
+            android:textAlignment="textEnd"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/payment_shipping_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment_total_price_label"
+            android:textSize="16dp"
+            android:text="Shipping Address: "
+            android:textAlignment="textEnd"
+            android:layout_marginTop="12dp"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/payment_continue_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/payment_shipping_address"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/green_button_background"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</ScrollView>

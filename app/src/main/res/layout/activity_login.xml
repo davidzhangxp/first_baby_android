@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity">
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24dp"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:layout_below="@id/login_title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:layout_below="@id/login_email"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:inputType="textPassword"
+        />
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:layout_below="@+id/login_password"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="18dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgot_password"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Login"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:textColor="@color/white"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/google_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_google"
+        android:layout_below="@id/login_btn"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+
+        />
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/facebook_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/google_login_btn"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+    <LinearLayout
+        android:id="@+id/login_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facebook_login_button"
+        android:layout_marginTop="@dimen/margin_top"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_alignParentEnd="true"
+
+        >
+        <TextView
+            android:id="@+id/no_account_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don\'t have an account:"
+            android:textSize="@dimen/progress_text_size"
+            android:textColor="@color/black"
+            android:layout_marginEnd="18dp"
+            />
+        <TextView
+            android:id="@+id/tv_register_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="@dimen/progress_text_size"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            />
+    </LinearLayout>
+</RelativeLayout>

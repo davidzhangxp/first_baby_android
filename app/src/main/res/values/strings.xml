@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">first-baby</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgot_password_description">Enter your email address we\'ll send you a email, you can reset you email address.</string>
+    <string name="resend_verification_email">If you didn\'t receive verifacation email, Enter your email we\'ll resend your a new email</string>
+    <string name="facebook_app_id">292812412360450</string>
+    <string name="fb_login_protocol_scheme">fb292812412360450</string>
+
+
+</resources>

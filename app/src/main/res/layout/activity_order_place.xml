@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.OrderPlaceActivity">
+
+
+    <TextView
+        android:id="@+id/order_title_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We've received your order!"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/order_number_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order Number is :"
+        android:layout_below="@+id/order_title_label"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:gravity="left"
+        />
+    <TextView
+        android:id="@+id/order_shipping_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick up"
+        android:layout_below="@+id/order_number_label"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:gravity="left"
+        />
+    <TextView
+        android:id="@+id/order_total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total price"
+        android:layout_below="@+id/order_shipping_label"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:gravity="left"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_order_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_total_price"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
